@@ -3,7 +3,38 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-:root {
+
+:root{
+	--gap: 1em;
+	--index: calc(1vw + 1vh);
+	--color: #000;
+}
+
+body{
+	overflow: hidden;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* :root {
 	--gap: .5em;
 	--index: calc(1vw + 1vh);
 	--color-dark: #000;
@@ -58,22 +89,22 @@ body {
 }
 .loaded .header span {
 	opacity: 0;
-}
+} */
 
 /* DARK MODE OS */
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
 	body {
 		background-color: var(--color-dark);
 	}
 	.header {
 		filter: invert(100%);
 	}
-}
+} */
 
 /* MOBILE */
 
-@media (max-width : 992px) {
+/* @media (max-width : 992px) {
 
 	.header {
 		position: relative;
@@ -94,4 +125,4 @@ body {
 		transform: scale(1);
 	}
 
-}
+} */
