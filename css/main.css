@@ -4,13 +4,13 @@
 	box-sizing: border-box;
 }
 
-:root{
+:root {
 	--gap: .5em;
 	--index: calc(1vw + 1vh);
 	--color: #000;
 }
 
-body{
+body {
 	overflow: hidden;
 	height: 100vh;
 	display: flex;
@@ -30,28 +30,36 @@ body{
 	margin-top: .2em;
 }
 
-.header span{
+.header span {
 	display: block;
 	font-family: Helvetica, sans-serif;
 	font-size: calc(var(--index) * .75);
 	margin-top: 5px;
 }
 
-.gallery{
+.gallery {
 	width: 30vw;
 	column-width: 2em;
 	gap: var(--gap);
 	transform: scale(8.2);
+	will-change: transform;
+	transition: transform 1s cubic-bezier(.075, 1, .25, 1);
 
 }
 
-.gallery__item{
+.gallery__item {
 	margin-bottom: var(--gap);
 	transform: scale(1.001);
+	will-change: transform;
+	transition: .3s;
 
 }
 
-.gallery__item img{
+.gallery__item:hover{
+	transform: scale(1.03);
+}
+
+.gallery__item img {
 	width: 100%;
 	display: block;
 
