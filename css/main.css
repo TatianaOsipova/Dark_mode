@@ -18,7 +18,7 @@ body {
 	align-items: center;
 }
 
-.header {
+.header__title {
 	text-transform: uppercase;
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 	letter-spacing: .1em;
@@ -31,7 +31,7 @@ body {
 	width: min-content;
 }
 
-.header span {
+.header__title span {
 	display: block;
 	font-family: Helvetica, sans-serif;
 	font-size: calc(var(--index) * .75);
