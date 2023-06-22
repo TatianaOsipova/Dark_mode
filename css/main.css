@@ -28,6 +28,7 @@ body {
 	text-align: center;
 	opacity: .9;
 	margin-top: .2em;
+	width: min-content;
 }
 
 .header span {
@@ -44,7 +45,6 @@ body {
 	transform: scale(8.2);
 	will-change: transform;
 	transition: transform 1s cubic-bezier(.075, 1, .25, 1), opacity 1s;
-
 }
 
 .gallery__item {
